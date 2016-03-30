@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.practice.jacob.scripturereference.GetScripture"
+    android:background="#e6e6e6">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:id="@+id/shareButton"
+        android:textSize="24sp"
+        android:clickable="false"
+        android:background="#2e87b1"
+        android:textColor="#bebcbc"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendInfo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Book"
+        android:id="@+id/BookSpace"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:autoText="false"
+        android:background="#3d3c3c"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="#bebcbc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Chapter"
+        android:id="@+id/ChapterSpace"
+        android:textAlignment="center"
+        android:background="#3d3c3c"
+        android:textSize="28sp"
+        android:textColor="#bebcbc"
+        android:layout_below="@+id/BookText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Verse(s)"
+        android:id="@+id/VerseSpace"
+        android:textAlignment="center"
+        android:background="#3d3c3c"
+        android:textSize="28sp"
+        android:textColor="#bebcbc"
+        android:layout_below="@+id/ChapterText"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/ChapterText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BookText"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:layout_below="@+id/BookSpace"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="(Enter Book)" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/ChapterText"
+        android:textAlignment="center"
+        android:layout_below="@+id/ChapterSpace"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:hint="(Enter Chapter)" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/VerseText"
+        android:textAlignment="center"
+        android:layout_below="@+id/VerseSpace"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="text"
+        android:hint="(Enter Verse)" />
+</RelativeLayout>
